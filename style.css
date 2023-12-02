@@ -1,0 +1,73 @@
+/* Media Queries are solely based/ determined by view height and view width of the screen */
+
+/* VH and VW ???  */
+/* Screen Percentages */
+
+/*** Rule Of Thumb:  ALWAYS ALWAYS ALWAYS START WITH MOBILE VIEW*/
+
+@media screen and (max-width: 3000px) {
+ 
+  body {
+    background-color: rgb(218, 130, 130);
+  }
+  .images {
+    height: 100px;
+    width: 100px;
+    border: 2px dashed rgb(98, 123, 55);
+    background-image: url('https://images.unsplash.com/photo-1663784969369-8f891eb3739b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+  }
+  .squares{
+    border: solid rgb(34, 122, 255);
+  }
+  .text{
+    color: rgb(116, 255, 135);
+  }
+}
+/* -------------------------------------------{Desktop View} */
+
+@media screen and (max-width: 1080px) {
+  body {
+    background-color: rgb(128, 46, 46);
+  }
+  .images {
+    height: 200px;
+    width: 1800px;
+    border: 2px dashed rgb(209, 230, 173);
+    background-image: url('https://images.unsplash.com/photo-1701267864115-fa2edc7de453?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+  }
+  .squares{
+    border: solid rgb(0, 0, 0);
+    display: flex;
+    margin: 0.4rem;
+  }
+  .text{
+    color: rgb(116, 190, 255);
+  }
+  
+  
+}
+/* -------------------------------------------{Mid [IPAD]} */
+
+@media screen and (max-width: 880px) {
+  body {
+    background-color: rgb(33, 33, 33);
+  }
+  .images {
+    height: 50vh;
+    width: 50vh;
+    border: 2px dashed lightblue;
+    background-image: url('https://images.unsplash.com/photo-1701338892901-7790da094436?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+  }
+  .squares{
+    border: solid pink;
+    display: block;
+    margin: 1rem;
+  }
+  .text{
+    color: aliceblue;
+  }
+}
+/* -------------------------------------------{Mobile View} */
